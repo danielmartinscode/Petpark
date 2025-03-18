@@ -1,32 +1,76 @@
-.servicos{
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-xxxl);
-    padding: var(--padding-5xl) 0;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.servicos {
+    display: flex; /* Define o elemento como um container flexível. */
+    flex-direction: column; /* Define a direção dos itens flexíveis como coluna. */
+    gap: var(--gap-xxxl); /* Define o espaçamento entre os itens flexíveis usando uma variável CSS. */
+    padding: var(--padding-5xl) 0; /* Define o preenchimento superior e inferior usando uma variável CSS. */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro do container flexível. */
+    align-items: center; /* Centraliza os itens verticalmente dentro do container flexível. */
+    width: 100%; /* Define a largura do elemento como 100% do seu contêiner pai. */
 }
 
-.servicos-titulo{
-    color: var(--cor-primaria-light);
+.servicos-titulo {
+    color: var(--cor-primaria-light); /* Define a cor do texto usando uma variável CSS. */
 }
 
-.servicos-lista{
-    display: flex;
-    gap: var(--gap-m);
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.servicos-lista {
+    display: flex; /* Define o elemento como um container flexível. */
+    gap: var(--gap-m); /* Define o espaçamento entre os itens flexíveis usando uma variável CSS. */
+    justify-content: space-between; /* Distribui os itens uniformemente com espaço entre eles. */
+    align-items: center; /* Centraliza os itens verticalmente dentro do container flexível. */
+    flex-wrap: wrap; /* Permite que os itens flexíveis quebrem para a próxima linha se não houver espaço suficiente. */
 }
 
-.servicos-lista > li > .link{
-    text-decoration: none;
-    font-family: var(--font-sigmar);
-    font-size: var(--fonte-size-m);
-    color: var(--cor-primaria-light);
-    background-color: var(--cor-secundaria-light);
-    padding: var(--padding-m) var(--padding-l);
-    border-radius: 1rem;
-    position: relative;
+.servicos-lista > li > .link {
+    text-decoration: none; /* Remove a decoração de texto (sublinhado). */
+    font-family: var(--font-sigmar); /* Define a fonte do texto usando uma variável CSS. */
+    font-size: var(--fonte-size-m); /* Define o tamanho da fonte do texto usando uma variável CSS. */
+    color: var(--cor-primaria-light); /* Define a cor do texto usando uma variável CSS. */
+    background-color: var(--cor-secundaria-light); /* Define a cor de fundo usando uma variável CSS. */
+    padding: var(--padding-m) var(--padding-l); /* Define o preenchimento interno usando variáveis CSS. */
+    border-radius: 1rem; /* Define o raio da borda para criar cantos arredondados. */
+    position: relative; /* Define a posição do elemento como relativa. */
+}
+
+.link::before {
+    content: ""; /* Define o conteúdo do pseudo-elemento como vazio. */
+    position: absolute; /* Define a posição do pseudo-elemento como absoluta. */
+    left: -10px; /* Define a posição esquerda do pseudo-elemento como -10px. */
+    bottom: 50%; /* Define a posição inferior do pseudo-elemento como 50%. */
+    width: 35px; /* Define a largura do pseudo-elemento. */
+    height: 35px; /* Define a altura do pseudo-elemento. */
+    background-size: cover; /* Define o tamanho da imagem de fundo para cobrir o elemento. */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo. */
+    transform: scale(0); /* Define a escala inicial do pseudo-elemento como 0. */
+    transition: transform 0.3s ease, left 0.3s ease; /* Define uma transição suave para a transformação e posição esquerda. */
+}
+
+.banho-e-tosa > .link::before {
+    background-image: url(../assets/icones/banho-e-tosa.png); /* Define a imagem de fundo do pseudo-elemento para o serviço de banho e tosa. */
+}
+
+.hospedagem > .link::before {
+    background-image: url(../assets/icones/hospedagem.png); /* Define a imagem de fundo do pseudo-elemento para o serviço de hospedagem. */
+}
+
+.veterinario > .link::before {
+    background-image: url(../assets/icones/veterinario.png); /* Define a imagem de fundo do pseudo-elemento para o serviço de veterinário. */
+}
+
+.adestramento > .link::before {
+    background-image: url(../assets/icones/adestramento.png); /* Define a imagem de fundo do pseudo-elemento para o serviço de adestramento. */
+}
+
+.petsiter > .link::before {
+    background-image: url(../assets/icones/petsiter.png); /* Define a imagem de fundo do pseudo-elemento para o serviço de petsiter. */
+}
+
+.servicos-lista > li > .link:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a escala do link ao passar o mouse. */
+    transition: transform 0.3s ease-in; /* Define uma transição suave para a transformação. */
+    padding-left: var(--padding-xxl); /* Aumenta o preenchimento esquerdo ao passar o mouse. */
+}
+
+.link:hover::before {
+    transform: scale(1) translateY(50%); /* Define a escala do pseudo-elemento para 1 e move verticalmente ao passar o mouse. */
+    left: 0.5rem; /* Move o pseudo-elemento para a direita ao passar o mouse. */
 }

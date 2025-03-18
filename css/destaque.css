@@ -1,21 +1,21 @@
-.destaque{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--cor-secundaria-light);
-    padding: var(--padding-5xl) 0;
+.destaque {
+    display: flex; /* Define o elemento como um container flexível. */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro do container flexível. */
+    align-items: center; /* Centraliza os itens verticalmente dentro do container flexível. */
+    background-color: var(--cor-secundaria-light); /* Define a cor de fundo usando uma variável CSS. */
+    padding: var(--padding-5xl) 0; /* Define o preenchimento superior e inferior usando uma variável CSS. */
 }
 
-.banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.banner {
+    display: flex; /* Define o elemento como um container flexível. */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro do container flexível. */
+    align-items: center; /* Centraliza os itens verticalmente dentro do container flexível. */
 }
 
-.destaque-titulo{
-    color: var(--cor-primaria-light);
+.destaque-titulo {
+    color: var(--cor-primaria-light); /* Define a cor do texto usando uma variável CSS. */
 }
 
-.destaque-titulo > span{
-    color: var(--cor-terciaria-dark);
+.destaque-titulo > span {
+    color: var(--cor-terciaria-dark); /* Define a cor do texto do elemento span filho usando uma variável CSS. */
 }

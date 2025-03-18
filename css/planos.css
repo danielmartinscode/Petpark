@@ -1,0 +1,60 @@
+.planos {
+    display: flex; /* Define o elemento como um container flexível. */
+    flex-direction: column; /* Define a direção dos itens flexíveis como coluna. */
+    align-items: center; /* Centraliza os itens horizontalmente dentro do container flexível. */
+    justify-content: center; /* Centraliza os itens verticalmente dentro do container flexível. */
+    padding: var(--padding-5xl); /* Define o preenchimento interno usando uma variável CSS. */
+}
+
+.planos-background {
+    display: flex; /* Define o elemento como um container flexível. */
+    flex-direction: column; /* Define a direção dos itens flexíveis como coluna. */
+    align-items: center; /* Centraliza os itens horizontalmente dentro do container flexível. */
+    gap: var(--gap-xl); /* Define o espaçamento entre os itens flexíveis usando uma variável CSS. */
+    background: var(--cor-primaria-light); /* Define a cor de fundo usando uma variável CSS. */
+    padding: var(--padding-xl); /* Define o preenchimento interno usando uma variável CSS. */
+    border-radius: 2rem; /* Define o raio da borda para criar cantos arredondados. */
+}
+
+.planos-titulo {
+    color: var(--cor-secundaria-light); /* Define a cor do texto usando uma variável CSS. */
+}
+
+.lista-planos {
+    display: flex; /* Define o elemento como um container flexível. */
+    justify-content: space-between; /* Distribui os itens uniformemente com espaço entre eles. */
+    gap: var(--gap-xl); /* Define o espaçamento entre os itens flexíveis usando uma variável CSS. */
+}
+
+.cartao {
+    display: flex; /* Define o elemento como um container flexível. */
+    flex-direction: column; /* Define a direção dos itens flexíveis como coluna. */
+    align-items: center; /* Centraliza os itens horizontalmente dentro do container flexível. */
+    gap: var(--gap-m); /* Define o espaçamento entre os itens flexíveis usando uma variável CSS. */
+    background-color: var(--cor-neutra-light); /* Define a cor de fundo usando uma variável CSS. */
+    padding: var(--padding-m); /* Define o preenchimento interno usando uma variável CSS. */
+    border-radius: 1rem; /* Define o raio da borda para criar cantos arredondados. */
+    flex-grow: 1; /* Permite que o elemento cresça para preencher o espaço disponível. */
+}
+
+.cartao > h3 {
+    font-size: var(--fonte-size-l); /* Define o tamanho da fonte do texto usando uma variável CSS. */
+}
+
+.cartap > p {
+    text-align: center; /* Centraliza o texto horizontalmente. */
+}
+
+.cartao > span {
+    font-size: var(--fonte-size-xl); /* Define o tamanho da fonte do texto usando uma variável CSS. */
+    font-family: var(--font-sigmar); /* Define a fonte do texto usando uma variável CSS. */
+    color: var(--cor-primaria-light); /* Define a cor do texto usando uma variável CSS. */
+}
+
+.botao-compra {
+    border: none; /* Remove a borda do botão. */
+    color: var(--cor-neutra-light); /* Define a cor do texto usando uma variável CSS. */
+    background-color: var(--cor-primaria-light); /* Define a cor de fundo usando uma variável CSS. */
+    padding: var(--padding-s) var(--padding-l); /* Define o preenchimento interno usando variáveis CSS. */
+    border-radius: 2rem; /* Define o raio da borda para criar cantos arredondados. */
+}

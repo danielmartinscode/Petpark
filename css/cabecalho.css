@@ -1,87 +1,87 @@
-.cabecalho{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--gap-m);
-    padding-bottom: var(--padding-xl);
+.cabecalho {
+    display: flex; /* Define o elemento como um container flexível. */
+    flex-direction: column; /* Define a direção dos itens flexíveis como coluna. */
+    align-items: center; /* Centraliza os itens horizontalmente dentro do container flexível. */
+    gap: var(--gap-m); /* Define o espaçamento entre os itens flexíveis usando uma variável CSS. */
+    padding-bottom: var(--padding-xl); /* Define o preenchimento inferior usando uma variável CSS. */
 }
 
-.alinhamento-cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: var(--padding-l);
+.alinhamento-cabecalho {
+    display: flex; /* Define o elemento como um container flexível. */
+    justify-content: space-between; /* Distribui os itens uniformemente com espaço entre eles. */
+    align-items: center; /* Centraliza os itens verticalmente dentro do container flexível. */
+    padding-top: var(--padding-l); /* Define o preenchimento superior usando uma variável CSS. */
 }
 
-.label-busca{
-    display: flex;
-    flex-grow: 0.5;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid var(--cor-neutra-dark);
-    padding: var(--padding-s) var(--padding-m);
-    border-radius: 2rem;
+.label-busca {
+    display: flex; /* Define o elemento como um container flexível. */
+    flex-grow: 0.5; /* Permite que o elemento cresça para preencher o espaço disponível. */
+    justify-content: space-between; /* Distribui os itens uniformemente com espaço entre eles. */
+    align-items: center; /* Centraliza os itens verticalmente dentro do container flexível. */
+    border: 1px solid var(--cor-neutra-dark); /* Define a borda do elemento usando uma variável CSS. */
+    padding: var(--padding-s) var(--padding-m); /* Define o preenchimento interno usando variáveis CSS. */
+    border-radius: 2rem; /* Define o raio da borda para criar cantos arredondados. */
 }
 
-.label-busca input{
-    border: none;
-    outline: none;
+.label-busca input {
+    border: none; /* Remove a borda do campo de entrada. */
+    outline: none; /* Remove a borda de foco do campo de entrada. */
 }
 
-.icone-busca{
-    display: flex;
-    align-items: center;
+.icone-busca {
+    display: flex; /* Define o elemento como um container flexível. */
+    align-items: center; /* Centraliza os itens verticalmente dentro do container flexível. */
 
-    &::after{
-        content: "";
-        position: relative;
-        background-image: url(../assets/icones/busca.png);
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
-        background-repeat: no-repeat;
+    &::after { /* Aplica estilos ao pseudo-elemento ::after. */
+        content: ""; /* Define o conteúdo do pseudo-elemento como vazio. */
+        position: relative; /* Define a posição do pseudo-elemento como relativa. */
+        background-image: url(../assets/icones/busca.png); /* Define a imagem de fundo do pseudo-elemento. */
+        width: 20px; /* Define a largura do pseudo-elemento. */
+        height: 20px; /* Define a altura do pseudo-elemento. */
+        cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse. */
+        background-repeat: no-repeat; /* Impede a repetição da imagem de fundo. */
     }
 }
 
-.botao-login{
-    border: none;
-    background-color: transparent;
-    display: flex;
-    gap: var(--gap-s);
-    align-items: center;
-    color: var(--cor-neutra-dark);
+.botao-login {
+    border: none; /* Remove a borda do botão. */
+    background-color: transparent; /* Define o fundo do botão como transparente. */
+    display: flex; /* Define o elemento como um container flexível. */
+    gap: var(--gap-s); /* Define o espaçamento entre os itens flexíveis usando uma variável CSS. */
+    align-items: center; /* Centraliza os itens verticalmente dentro do container flexível. */
+    color: var(--cor-neutra-dark); /* Define a cor do texto usando uma variável CSS. */
 }
 
-.navegacao{
-    align-content: center;
+.navegacao {
+    align-content: center; /* Centraliza os itens dentro do container flexível (usado para flex-wrap: wrap). */
 }
 
-.menu-lista{
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 0;
-    align-items: center;
+.menu-lista {
+    display: flex; /* Define o elemento como um container flexível. */
+    justify-content: space-between; /* Distribui os itens uniformemente com espaço entre eles. */
+    margin: 1rem 0; /* Define a margem superior e inferior. */
+    align-items: center; /* Centraliza os itens verticalmente dentro do container flexível. */
 }
 
-.menu-link{
-    text-decoration: none;
-    color: var(--cor-neutra-dark);
-    padding-bottom: var(--padding-xs);
-    position: relative;
+.menu-link {
+    text-decoration: none; /* Remove a decoração de texto (sublinhado). */
+    color: var(--cor-neutra-dark); /* Define a cor do texto usando uma variável CSS. */
+    padding-bottom: var(--padding-xs); /* Define o preenchimento inferior usando uma variável CSS. */
+    position: relative; /* Define a posição do elemento como relativa. */
 
-    &::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 2px;
-        background-color: var(--cor-neutra-dark);
-        transition: width 0.3s ease;
+    &::after { /* Aplica estilos ao pseudo-elemento ::after. */
+        content: ""; /* Define o conteúdo do pseudo-elemento como vazio. */
+        position: absolute; /* Define a posição do pseudo-elemento como absoluta. */
+        left: 0; /* Define a posição esquerda do pseudo-elemento como 0. */
+        bottom: 0; /* Define a posição inferior do pseudo-elemento como 0. */
+        width: 0; /* Define a largura inicial do pseudo-elemento como 0. */
+        height: 2px; /* Define a altura do pseudo-elemento. */
+        background-color: var(--cor-neutra-dark); /* Define a cor de fundo do pseudo-elemento usando uma variável CSS. */
+        transition: width 0.3s ease; /* Define uma transição suave para a largura do pseudo-elemento. */
     }
 }
 
-.menu-link:hover::after, .menu-link:focus::after{
-    width: 100%;
+.menu-link:hover::after,
+.menu-link:focus::after {
+    width: 100%; /* Define a largura do pseudo-elemento como 100% ao passar o mouse ou focar. */
 }
-
