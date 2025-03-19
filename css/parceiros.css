@@ -1,0 +1,47 @@
+.parceiros{
+    /* outline: 2px solid red; */ /* Linha comentada que adicionaria uma borda vermelha ao elemento para fins de depuração. */
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    flex-direction: column; /* Organiza os itens filhos em uma coluna, um abaixo do outro. */
+    align-items: center; /* Centraliza os itens filhos horizontalmente dentro do container. */
+    justify-content: center; /* Centraliza os itens filhos verticalmente dentro do container. */
+    width: 100%; /* Define a largura do elemento para ocupar 100% do seu container pai. */
+    gap: var(--gap-xl); /* Adiciona espaço entre os itens filhos, usando uma variável CSS para o valor do espaçamento. */
+    padding: var(--padding-xxl) 0; /* Adiciona preenchimento (padding) vertical ao elemento, usando uma variável CSS para o valor superior e inferior. */
+    background-color: var(--cor-neutra-light); /* Define a cor de fundo do elemento usando uma variável CSS. */
+}
+
+.parceiros-titulo{
+    color: var(--cor-primaria-light); /* Define a cor do texto do título usando uma variável CSS. */
+    margin-bottom: 1.25rem; /* Adiciona uma margem inferior ao título, afastando-o dos elementos abaixo. */
+}
+
+.lista-parceiros{
+    /* outline: 2px solid blue; */ /* Linha comentada que adicionaria uma borda azul ao elemento para fins de depuração. */
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    flex-wrap: wrap; /* Permite que os itens filhos quebrem para a próxima linha quando não houver espaço suficiente. */
+    justify-content: center; /* Centraliza os itens filhos horizontalmente dentro do container. */
+    column-gap: var(--gap-xxxl); /* Adiciona espaço entre as colunas dos itens filhos, usando uma variável CSS para o valor do espaçamento. */
+}
+
+.lista-parceiros > div{
+    flex: 1 0 100px; /* Define as propriedades flexíveis dos itens filhos: permite que cresçam, não permite que encolham e define uma largura base de 100px. */
+    width: 100%; /* Define a largura dos itens filhos para ocupar 100% do seu container pai. */
+}
+
+.lista-parceiros > div > img {
+    max-width: 100%; /* Garante que a imagem não exceda a largura do seu container pai. */
+    height: auto; /* Mantém a proporção da imagem, ajustando a altura automaticamente. */
+    display: block; /* Garante que a imagem seja um elemento de bloco, removendo espaços extras ao redor dela. */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente dentro do seu container pai. */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos para a propriedade 'transform', com uma curva de facilidade 'ease'. */
+}
+
+.lista-parceiros > div:nth-child(odd):hover img{
+    transform: scale(1.1); /* Aumenta a escala da imagem em 10% quando o container pai (div) com índice ímpar é passado o mouse por cima. */
+    box-shadow: 0 0 20px var(--cor-primaria-box-shadow); /* Adiciona uma sombra à imagem quando o container pai (div) com índice ímpar é passado o mouse por cima, usando uma variável CSS para a cor da sombra primária. */
+}
+
+.lista-parceiros > div:nth-child(even):hover img{
+    transform: scale(1.1); /* Aumenta a escala da imagem em 10% quando o container pai (div) com índice par é passado o mouse por cima. */
+    box-shadow: 0 0 20px var(--cor-secundaria-box-shadow); /* Adiciona uma sombra à imagem quando o container pai (div) com índice par é passado o mouse por cima, usando uma variável CSS para a cor da sombra secundária. */
+}
