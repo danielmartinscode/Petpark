@@ -1,0 +1,59 @@
+.ofertas{
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    flex-direction: column; /* Organiza os itens filhos em uma coluna, um abaixo do outro. */
+    align-items: center; /* Centraliza os itens filhos horizontalmente dentro do container. */
+    justify-content: center; /* Centraliza os itens filhos verticalmente dentro do container. */
+    padding: var(--padding-5xl) 0; /* Adiciona preenchimento (padding) vertical ao elemento, usando uma variável CSS para o valor superior e inferior. */
+    gap: var(--gap-xl); /* Adiciona espaço entre os itens filhos, usando uma variável CSS para o valor do espaçamento. */
+    width: 100%; /* Define a largura do elemento para ocupar 100% do seu container pai. */
+    /* outline: 2px solid red; */ /* Linha comentada que adicionaria uma borda vermelha ao elemento para fins de depuração. */
+    background-color: var(--cor-secundaria-light); /* Define a cor de fundo do elemento usando uma variável CSS. */
+}
+
+.ofertas-titulo{
+    color: var(--cor-primaria-light); /* Define a cor do texto do título usando uma variável CSS. */
+}
+
+.carrossel{
+    /* outline: 2px solid green; */ /* Linha comentada que adicionaria uma borda verde ao elemento para fins de depuração. */
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    gap: var(--gap-l); /* Adiciona espaço entre os itens filhos, usando uma variável CSS para o valor do espaçamento. */
+    position: relative; /* Define a posição do elemento como relativa, permitindo o posicionamento absoluto dos seus filhos. */
+    overflow: hidden; /* Oculta qualquer conteúdo que exceda os limites do elemento. */
+}
+
+.carrossel-item{
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    flex-direction: column; /* Organiza os itens filhos em uma coluna, um abaixo do outro. */
+    gap: var(--gap-m); /* Adiciona espaço entre os itens filhos, usando uma variável CSS para o valor do espaçamento. */
+    align-items: center; /* Centraliza os itens filhos horizontalmente dentro do container. */
+    /* outline: 2px solid blue; */ /* Linha comentada que adicionaria uma borda azul ao elemento para fins de depuração. */
+    padding: var(--padding-m) var(--padding-s); /* Adiciona preenchimento (padding) vertical e horizontal ao elemento, usando variáveis CSS. */
+    background-color: var(--cor-neutra-light); /* Define a cor de fundo do elemento usando uma variável CSS. */
+    border-radius: 1rem; /* Define o raio da borda do elemento, arredondando os cantos. */
+    text-align: center; /* Centraliza o texto dentro do elemento. */
+    gap: var(--gap-m); /* Adiciona espaço entre os itens filhos, usando uma variável CSS para o valor do espaçamento. */
+}
+
+.carrossel-nome, .carrossel-preco{
+    font-family: var(--font-poppins); /* Define a família da fonte do texto usando uma variável CSS. */
+    font-size: var(--fonte-size-xm); /* Define o tamanho da fonte do texto usando uma variável CSS. */
+    font-weight: 600; /* Define a espessura da fonte do texto como semi-negrito. */
+}
+
+.carrossel-button{
+    position: absolute; /* Define a posição do elemento como absoluta, permitindo o posicionamento preciso dentro do container pai. */
+    top: 45%; /* Posiciona o elemento a 45% do topo do container pai. */
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    justify-content: space-between; /* Distribui os itens filhos uniformemente ao longo da linha principal, com espaço igual entre eles. */
+    align-items: center; /* Centraliza os itens filhos verticalmente dentro do container. */
+    width: 100%; /* Define a largura do elemento para ocupar 100% do seu container pai. */
+}
+
+.carrossel-nav{
+    border: none; /* Remove a borda do elemento. */
+    border-radius: 50%; /* Define o raio da borda do elemento como 50%, criando um círculo. */
+    padding: var(--padding-m); /* Adiciona preenchimento (padding) ao elemento, usando uma variável CSS. */
+    background-color: var(--cor-primaria-light); /* Define a cor de fundo do elemento usando uma variável CSS. */
+    color: var(--cor-neutra-light); /* Define a cor do texto do elemento usando uma variável CSS. */
+}
