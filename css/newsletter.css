@@ -1,92 +1,91 @@
 .newsletter {
-    outline: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap-xl);
-    padding: var(--padding-4xl) 0;
-    background-color: var(--cor-secundaria-light);
-    width: 100%;
+    /* outline: 2px solid red; */ /* Linha comentada que adicionaria uma borda vermelha ao elemento para fins de depuração. */
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    flex-direction: column; /* Organiza os itens filhos em uma coluna, um abaixo do outro. */
+    align-items: center; /* Centraliza os itens filhos horizontalmente dentro do container. */
+    justify-content: center; /* Centraliza os itens filhos verticalmente dentro do container. */
+    gap: var(--gap-xl); /* Adiciona espaço entre os itens filhos, usando uma variável CSS para o valor do espaçamento. */
+    padding: var(--padding-4xl) 0; /* Adiciona preenchimento (padding) vertical ao elemento, usando uma variável CSS para o valor superior e inferior. */
+    background-color: var(--cor-secundaria-light); /* Define a cor de fundo do elemento usando uma variável CSS. */
+    width: 100%; /* Define a largura do elemento para ocupar 100% do seu container pai. */
 }
 
 .newsletter h2{
-    color: var(--cor-primaria-light);
+    color: var(--cor-primaria-light); /* Define a cor do texto do título h2 usando uma variável CSS. */
 }
 
 .newsletter p{
-    font-size: var(--fonte-size-m);
+    font-size: var(--fonte-size-m); /* Define o tamanho da fonte do parágrafo usando uma variável CSS. */
 }
 
 .formulario{
-    /* outline: 2px solid green; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-l);
+    /* outline: 2px solid green; */ /* Linha comentada que adicionaria uma borda verde ao elemento para fins de depuração. */
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    flex-wrap: wrap; /* Permite que os itens filhos quebrem para a próxima linha quando não houver espaço suficiente. */
+    justify-content: center; /* Centraliza os itens filhos horizontalmente dentro do container. */
+    align-items: center; /* Centraliza os itens filhos verticalmente dentro do container. */
+    gap: var(--gap-l); /* Adiciona espaço entre os itens filhos, usando uma variável CSS para o valor do espaçamento. */
 }
 
 .botao-enviar{
-    border: none;
-    background-color: var(--cor-primaria-light);
-    color: var(--cor-neutra-light);
-    padding: var(--padding-s) var(--padding-l);
-    border-radius: 2rem;
-    font-size: var(--fonte-size-m);
-    cursor: pointer;
+    border: none; /* Remove a borda do botão. */
+    background-color: var(--cor-primaria-light); /* Define a cor de fundo do botão usando uma variável CSS. */
+    color: var(--cor-neutra-light); /* Define a cor do texto do botão usando uma variável CSS. */
+    padding: var(--padding-s) var(--padding-l); /* Adiciona preenchimento (padding) vertical e horizontal ao botão, usando variáveis CSS. */
+    border-radius: 2rem; /* Define o raio da borda do botão, arredondando os cantos. */
+    font-size: var(--fonte-size-m); /* Define o tamanho da fonte do botão usando uma variável CSS. */
+    cursor: pointer; /* Define o cursor do mouse como um ponteiro ao passar por cima do botão. */
 }
 
 .formulario-input{
-    background-color: transparent;
-    border: 1px solid var(--cor-neutra-dark);
-    border-radius: 2rem;
-    padding: var(--padding-s) var(--padding-l);
-    flex: 1 0 200px;
+    background-color: transparent; /* Define a cor de fundo do campo de entrada como transparente. */
+    border: 1px solid var(--cor-neutra-dark); /* Define a borda do campo de entrada usando uma variável CSS para a cor. */
+    border-radius: 2rem; /* Define o raio da borda do campo de entrada, arredondando os cantos. */
+    padding: var(--padding-s) var(--padding-l); /* Adiciona preenchimento (padding) vertical e horizontal ao campo de entrada, usando variáveis CSS. */
+    flex: 1 0 200px; /* Define as propriedades flexíveis do campo de entrada: permite que cresça, não permite que encolha e define uma largura base de 200px. */
 }
 
 .formulario-input:user-valid{
-    border: 2px solid var(--cor-terciaria-dark);
+    border: 2px solid var(--cor-terciaria-dark); /* Define a borda do campo de entrada como uma borda de 2px sólida usando uma variável CSS para a cor terciária, quando o valor inserido é válido. */
 }
 
 .formulario-input:user-invalid{
-    border: 2px solid var(--cor-primaria-dark);
+    border: 2px solid var(--cor-primaria-dark); /* Define a borda do campo de entrada como uma borda de 2px sólida usando uma variável CSS para a cor primária, quando o valor inserido é inválido. */
 }
 
 .grupo-opcoes {
-    /* outline: 2px solid orange; */
-    display: flex;
-    align-items: center;
-    gap: var(--gap-m);
-    flex-wrap: wrap;
+    /* outline: 2px solid orange; */ /* Linha comentada que adicionaria uma borda laranja ao elemento para fins de depuração. */
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    align-items: center; /* Centraliza os itens filhos verticalmente dentro do container. */
+    gap: var(--gap-m); /* Adiciona espaço entre os itens filhos, usando uma variável CSS para o valor do espaçamento. */
+    flex-wrap: wrap; /* Permite que os itens filhos quebrem para a próxima linha quando não houver espaço suficiente. */
 }
 
 .opcao{
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding-left: var(--padding-xl);
-    
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    align-items: center; /* Centraliza os itens filhos verticalmente dentro do container. */
+    position: relative; /* Define a posição do elemento como relativa, permitindo o posicionamento absoluto dos seus filhos. */
+    padding-left: var(--padding-xl); /* Adiciona preenchimento (padding) à esquerda do elemento, usando uma variável CSS. */
 }
 
 .opcao input[type="checkbox"] {
-    /* outline: 2px solid red; */
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+    /* outline: 2px solid red; */ /* Linha comentada que adicionaria uma borda vermelha ao elemento para fins de depuração. */
+    position: absolute; /* Define a posição do elemento como absoluta, permitindo o posicionamento preciso dentro do container pai. */
+    opacity: 0; /* Torna o checkbox invisível. */
+    cursor: pointer; /* Define o cursor do mouse como um ponteiro ao passar por cima do checkbox. */
 }
 
 .opcao input[type="checkbox"] + span{
-    /* outline: 2px solid red; */
-    position: absolute;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    border: 1px solid var(--cor-neutra-dark);
-    background-color: transparent;
-    border-radius: 0.25rem;
+    /* outline: 2px solid red; */ /* Linha comentada que adicionaria uma borda vermelha ao elemento para fins de depuração. */
+    position: absolute; /* Define a posição do elemento como absoluta, permitindo o posicionamento preciso dentro do container pai. */
+    left: 0; /* Posiciona o elemento no lado esquerdo do container pai. */
+    width: 20px; /* Define a largura do elemento como 20 pixels. */
+    height: 20px; /* Define a altura do elemento como 20 pixels. */
+    border: 1px solid var(--cor-neutra-dark); /* Define a borda do elemento usando uma variável CSS para a cor. */
+    background-color: transparent; /* Define a cor de fundo do elemento como transparente. */
+    border-radius: 0.25rem; /* Define o raio da borda do elemento, arredondando os cantos. */
 }
 
 .opcao input[type="checkbox"]:checked + span{
-    background-color: var(--cor-primaria-light);
+    background-color: var(--cor-primaria-light); /* Define a cor de fundo do elemento usando uma variável CSS para a cor primária quando o checkbox está marcado. */
 }
