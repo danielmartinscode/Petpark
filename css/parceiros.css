@@ -21,6 +21,10 @@
     flex-wrap: wrap; /* Permite que os itens filhos quebrem para a próxima linha quando não houver espaço suficiente. */
     justify-content: center; /* Centraliza os itens filhos horizontalmente dentro do container. */
     column-gap: var(--gap-xxxl); /* Adiciona espaço entre as colunas dos itens filhos, usando uma variável CSS para o valor do espaçamento. */
+
+    @media (max-width: 768px){
+        gap: var(--gap-xxl);
+    }
 }
 
 .lista-parceiros > div{
@@ -39,6 +43,8 @@
 .lista-parceiros > div:nth-child(odd):hover img{
     transform: scale(1.1); /* Aumenta a escala da imagem em 10% quando o container pai (div) com índice ímpar é passado o mouse por cima. */
     box-shadow: 0 0 20px var(--cor-primaria-box-shadow); /* Adiciona uma sombra à imagem quando o container pai (div) com índice ímpar é passado o mouse por cima, usando uma variável CSS para a cor da sombra primária. */
+
+    
 }
 
 .lista-parceiros > div:nth-child(even):hover img{

@@ -18,12 +18,21 @@
 
 .planos-titulo {
     color: var(--cor-secundaria-light); /* Define a cor do texto usando uma variável CSS. */
+
+    @media (max-width: 768px){
+        text-align: center;
+    }
 }
 
 .lista-planos {
     display: flex; /* Define o elemento como um container flexível. */
     justify-content: space-between; /* Distribui os itens uniformemente com espaço entre eles. */
     gap: var(--gap-xl); /* Define o espaçamento entre os itens flexíveis usando uma variável CSS. */
+
+    @media (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .cartao {
@@ -35,6 +44,10 @@
     padding: var(--padding-m); /* Define o preenchimento interno usando uma variável CSS. */
     border-radius: 1rem; /* Define o raio da borda para criar cantos arredondados. */
     flex-grow: 1; /* Permite que o elemento cresça para preencher o espaço disponível. */
+
+    @media (max-width: 768px){
+        width: 50%;
+    }
 }
 
 .cartao > h3 {

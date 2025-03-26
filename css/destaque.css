@@ -4,12 +4,22 @@
     align-items: center; /* Centraliza os itens verticalmente dentro do container flexível. */
     background-color: var(--cor-secundaria-light); /* Define a cor de fundo usando uma variável CSS. */
     padding: var(--padding-5xl) 0; /* Define o preenchimento superior e inferior usando uma variável CSS. */
+
+    @media (max-width: 768px){
+        padding: var(--padding-xxl) var(--padding-3xl);
+    }
 }
 
 .banner {
     display: flex; /* Define o elemento como um container flexível. */
     justify-content: center; /* Centraliza os itens horizontalmente dentro do container flexível. */
     align-items: center; /* Centraliza os itens verticalmente dentro do container flexível. */
+
+    @media (max-width: 768px){
+        /* outline: 2px solid red; */
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .destaque-titulo {

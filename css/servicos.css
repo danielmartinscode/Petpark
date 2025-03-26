@@ -18,6 +18,12 @@
     justify-content: space-between; /* Distribui os itens uniformemente com espaço entre eles. */
     align-items: center; /* Centraliza os itens verticalmente dentro do container flexível. */
     flex-wrap: wrap; /* Permite que os itens flexíveis quebrem para a próxima linha se não houver espaço suficiente. */
+
+    @media (max-width: 768px){
+        height: 300px;
+        justify-content: space-around;
+        /* outline: 2px solid red; */
+    }
 }
 
 .servicos-lista > li > .link {

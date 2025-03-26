@@ -1,31 +1,39 @@
 .rodape{
-    /* outline: 2px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--padding-xxl);
+    /* outline: 2px solid red; */ /* Linha comentada que adicionaria uma borda vermelha ao elemento para fins de depuração. */
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    align-items: center; /* Centraliza os itens filhos verticalmente dentro do container. */
+    justify-content: center; /* Centraliza os itens filhos horizontalmente dentro do container. */
+    padding: var(--padding-xxl); /* Adiciona preenchimento (padding) a todos os lados do elemento, usando uma variável CSS. */
 }
 
 .rodape-bg{
-    /* outline: 2px solid blue; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    /* outline: 2px solid blue; */ /* Linha comentada que adicionaria uma borda azul ao elemento para fins de depuração. */
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    justify-content: space-between; /* Distribui os itens filhos uniformemente ao longo da linha principal, com espaço igual entre eles. */
+    align-items: center; /* Centraliza os itens filhos verticalmente dentro do container. */
 
-.icones-rodape{
-    /* outline: 2px solid orange; */
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: var(--gap-s);
-}
-
-.icone-rodape{
-    margin-right: 0.5rem;
-
-    &:last-child{
-        margin-right: 0;
+    @media (max-width: 768px){
+        flex-direction: column;
+        gap: var(--gap-m);
     }
 }
 
+.icones-rodape{
+    /* outline: 2px solid orange; Linha comentada que adicionaria uma borda laranja ao elemento para fins de depuração. */
+    display: flex; /* Define o elemento como um container flexível, permitindo o layout flexível dos seus filhos. */
+    flex-direction: column; /* Organiza os itens filhos em uma coluna, um abaixo do outro. */
+    align-items: start; /* Alinha os itens filhos ao início do container (lado esquerdo). */
+    gap: var(--gap-s); /* Adiciona espaço entre os itens filhos, usando uma variável CSS para o valor do espaçamento. */
+
+    @media (max-width: 768px){
+        align-items: center;
+    }
+}
+
+.icone-rodape{
+    margin-right: 0.5rem; /* Adiciona uma margem à direita do elemento, afastando-o dos elementos à direita. */
+
+    &:last-child{ /* Aplica estilos apenas ao último elemento filho. */
+        margin-right: 0; /* Remove a margem à direita do último elemento filho. */
+    }
+}
